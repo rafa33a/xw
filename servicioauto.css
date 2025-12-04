@@ -1,0 +1,140 @@
+/* ---------------------------------- */
+/* ESTILOS DEL BOTÓN DE INICIO */
+/* ---------------------------------- */
+
+/* Contenedor para centrar el botón horizontalmente */
+.center-button-container {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: -20px; /* Sube un poco para que no quede demasiado separado del título */
+}
+
+/* Estilos del botón: simula el aspecto de "contacto" (azul brillante con texto blanco) */
+.action-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #007bff; /* Azul brillante similar al de la imagen */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    border: none;
+    cursor: pointer;
+    /* Esquinas redondeadas (simulando el diseño del botón "contacto") */
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Transición suave para un efecto moderno al pasar el ratón */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+    background-color: #0056b3; /* Un azul ligeramente más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Un pequeño levantamiento para el efecto hover */
+}
+/* ---------------------------------- */
+/* ESTILOS BASE Y FUENTES */
+/* ---------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fondo blanco */
+    min-height: 100vh;
+}
+
+/* ---------------------------------- */
+/* CAJA DEL TÍTULO SUPERIOR (Azul Claro) */
+/* ---------------------------------- */
+.header-box {
+    background-color: #c0e0ff; /* Un azul pastel muy claro y limpio */
+    padding: 25px 0;
+    text-align: center;
+    border: 1px solid #a0a0a0; /* Borde gris sutil */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.header-box h1 {
+    /* Fuente que simula la caligrafía o serif de la imagen */
+    font-family: Georgia, serif; 
+    font-size: 38px;
+    color: #a52a2a; /* Rojo oscuro o borgoña */
+    /* Sombra de texto blanca/clara que hace que el texto resalte (efecto premium) */
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8), 
+                 -2px -2px 3px rgba(0, 0, 0, 0.2); 
+    margin: 0;
+    font-weight: 700;
+}
+
+/* ---------------------------------- */
+/* CONTENIDO PRINCIPAL Y GRID */
+/* ---------------------------------- */
+.content-container {
+    text-align: center;
+    padding: 20px 20px 180px 20px; /* Padding inferior extra por el footer fijo */
+}
+
+.content-container h2 {
+    font-family: Arial, sans-serif; 
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc; /* Línea sutil bajo el título */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Cuadrícula de productos con Flexbox */
+.products-grid {
+    display: flex;
+    justify-content: center; /* Centrar toda la fila de productos */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre los items */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    width: 20%; /* Ancho fijo para 4 columnas */
+    min-width: 150px;
+    padding: 10px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+.product-item p {
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+/* Estilo para el recuadro del producto "Encerado Premium" */
+.selected-item img {
+    /* El borde discontinuo azul de selección de GeoGebra/PowerPoint */
+    border: 3px dashed #007bff; 
+}
+
+
+/* ---------------------------------- */
+/* PIE DE PÁGINA DE BURBUJAS (Fijo) */
+/* ---------------------------------- */
+.bubbles-footer {
+    height: 150px; 
+    /* IMPORTANTE: Usa la ruta a tu imagen de burbujas aquí */
+    background-image: url('img/burbujas.png'); 
+    background-size: cover; 
+    background-repeat: repeat-x; 
+    width: 100%;
+    /* Posición fija en la parte inferior para que la imagen se vea como una "tira" */
+    position: fixed; 
+    bottom: 0;
+    z-index: 1; /* Asegura que esté sobre el fondo pero bajo el contenido principal */
+}

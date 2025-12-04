@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios del Charco</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #aeeeff;
+      color: #222;
+    }
+
+    header {
+      background-color: #00bfff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 36px;
+      color: red;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      background-color: #0077cc;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #004a99;
+    }
+
+    .subtext {
+      text-align: center;
+      font-size: 18px;
+      font-style: italic;
+      margin-top: 5px;
+      color: #003366;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 30px;
+      gap: 20px;
+    }
+
+    .service-card {
+      width: 300px;
+      position: relative;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .service-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .text-overlay {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .bottom-images {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+
+    .bottom-images img {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #00bfff;
+      color: white;
+      font-size: 16px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Servicios del Charco</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 end-0 me-3 mt-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                      <a class="nav-link nav-link-custom mx-2" href="contacto.html">contacto</a>
+                      <a class="nav-link nav-link-custom mx-2" href="servicio.html">Servicio</a>
+
+                        
+                    </div>
+                </div>
+            </nav>
+    <p class="subtext">Te ofrecemos una experiencia única e inigualable</p>
+  </header>
+
+  <section class="container">
+    <!-- Servicio 1 -->
+    <div class="service-card">
+      <img src="helicop.jpg" alt="Lavado de helicóptero">
+      <div class="text-overlay">Te ofrecemos una experiencia única e inigualable</div>
+    </div>
+
+    <!-- Servicio 2 -->
+    <div class="service-card">
+      <img src="moto.jpg" alt="Lavado de moto">
+      <div class="text-overlay">Contamos con todo tipo de servicio de lavado</div>
+    </div>
+
+    <!-- Servicio 3 -->
+    <div class="service-card">
+      <img src="camion.jpg" alt="Lavado de camión">
+      <div class="text-overlay">"Charco, el lugar perfecto para tu auto, limpio y brillante, siempre al tanto"</div>
+    </div>
+  </section>
+
+  <div class="bottom-images">
+    <img src="ubi.png" alt="Decorativo 1">
+    <img src="like.jpg" alt="Decorativo 2">
+  </div>
+
+  <footer>
+    © 2025 Servicios del Charco - Todos los derechos reservados
+  </footer>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enlace con Ícono a WhatsApp</title>
+</head>
+<body>
+    <h1>¡Chatea con Nosotros!</h1>
+    
+    <p>
+        <a href="https://wa.me/527971056627?text=Hola,%20quiero%20contactarte%20desde%20tu%20página%20web." target="_blank">
+            
+            <img 
+                src="watsap.jpeg" 
+                alt="Chatear por WhatsApp" 
+                style="width:60px; height:60px; border:0;"
+            >
+        </a>
+    </p>
+
+
+</body>
+</html>
+
+</body>
+</html>
